@@ -1,0 +1,25 @@
+// Number of Leading Zeros
+
+#include<stdio.h>
+void main()
+{
+	int n,num,i,bits,count=0;
+	printf("Enter a Number \n");
+	scanf("%d",&n);
+	
+	for(i=0;i<32;i++)
+	{
+		bits=1<<((sizeof(int)*8)-1);
+		num=bits>>i;
+		if(!(n&num))
+		{
+			count++;
+		}
+		else
+		{
+			break;
+		}
+	}
+	
+	printf("%d Leading Zero order ",count);
+}
