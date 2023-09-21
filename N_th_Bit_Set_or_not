@@ -1,0 +1,21 @@
+/// nth Bit Set or Not
+
+#include<stdio.h>
+void main()
+{
+	int n,position;
+	printf("Enter the Number\n");
+	scanf("%d",&n);
+	
+	printf("\n Enter the Position ");
+	scanf("%d",&position);
+	
+	if((n>>position-1)&1)
+	{
+		printf("%d  set  ",n);
+	}
+	else
+	{
+		printf("%d  not set  ",n);
+	}
+}
