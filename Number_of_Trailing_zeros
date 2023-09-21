@@ -1,0 +1,27 @@
+// Trailling Zeros
+
+#include<stdio.h>
+void main()
+{
+	int n,i,count=0,num;
+	printf("Enter a Number  \n");
+	scanf("%d",&n);
+	
+	for(i=0;i<31;i++)
+	{
+		num=1<<i;
+		
+		if(!(n&num))
+		{
+			count++;
+		}
+		else
+		{
+			break;
+		}
+	}
+	
+	printf("Trailing zeros  %d ",count);
+	
+	
+}
