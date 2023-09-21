@@ -1,0 +1,17 @@
+// LSB bit is set or not
+
+#include<stdio.h>
+void main()
+{
+	int n;
+	scanf("%d",&n);
+	
+	if(n&1)
+	{
+		printf("%d set  ",n);
+	}
+	else
+	{
+		printf("%d not set ",n);
+	}
+}
