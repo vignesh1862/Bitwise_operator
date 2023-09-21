@@ -1,0 +1,15 @@
+// Toggle Nth Bit
+
+#include<stdio.h>
+void main()
+{
+	int n,position,toggle;
+	printf("Enter Number \n");
+	scanf("%d",&n);
+	printf("Enter Position  ");
+	scanf("%d",&position);
+	
+	toggle=n^(1<<position-1);
+	
+	printf("%d Toggle  ",toggle);
+}
