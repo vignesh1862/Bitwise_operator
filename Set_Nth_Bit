@@ -1,0 +1,15 @@
+// Set Nth Bit
+
+#include<stdio.h>
+void main()
+{
+	int n,position,setbit;
+	printf("Enter a Number \n");
+	scanf("%d",&n);
+	printf("Enter the position \n ");
+	scanf("%d",&position);
+	
+	setbit= n | (1<<position-1);
+	printf("%d ",setbit);
+	
+}
