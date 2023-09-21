@@ -1,0 +1,34 @@
+// Rotate Bits N times
+
+
+#include<stdio.h>
+#define Bits 32
+
+
+int right(int n,int r)
+{
+	
+	return ((n>>r) | (n<<(Bits-r)));
+	
+}
+
+int left(int n,int r)
+{
+	return  ((n<<r) | (n>>(Bits-r)));
+}
+
+
+
+
+void main()
+{
+	int n,r;
+	printf("Enter the Number \n");
+	scanf("%d",&n);
+	printf("Enter the Number of Rotation\n");
+	scanf("%d",&r);
+	
+	printf("Right rotation : %d\n",right(n,r));
+	
+	printf("Left rotation : %d\n ",left(n,r));
+}
