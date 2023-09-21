@@ -1,0 +1,28 @@
+// Number of Zeros and ones
+
+#include<stdio.h>
+void main()
+{
+	int n,i,countN=0,num,countP=0;
+	printf("Enter a Number  ");
+	scanf("%d",&n);
+	
+	for(i=0;i<32;i++)
+	{
+		num=1<<i;
+		
+		if(n&num)
+		{
+			countP++;
+		}
+		else
+		{
+			countN++;
+		}
+		
+	}
+	
+	printf("Number of Zero : %d \n",countN);
+	printf("Number of One : %d ",countP);
+	
+}
