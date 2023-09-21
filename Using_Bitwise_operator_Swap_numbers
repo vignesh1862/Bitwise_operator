@@ -1,0 +1,20 @@
+
+// Swap using Bitwise Operator
+
+#include<stdio.h>
+
+
+void main()
+{
+	int a,b,k;
+	printf("Enter A and B  ");
+	scanf("%d%d",&a,&b);
+	
+	printf("Before Swap A = %d and B = %d  : \n",a,b);
+	
+	k=a^b;
+	a=a^k;
+	b=b^k;
+	
+	printf(" After Swap A = %d and B = %d  : \n",a,b);
+}
