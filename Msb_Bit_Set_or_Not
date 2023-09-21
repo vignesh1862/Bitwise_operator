@@ -1,0 +1,22 @@
+// Msb Bit Set or Not
+
+#include<stdio.h>
+void main()
+{
+	int n,bits,msb;
+	scanf("%d",&n);
+	
+	bits=sizeof(int)*8;
+	msb=1<<(bits-1);
+	
+	if(n&msb)
+	{
+		printf(" %d set  ",n);
+	}
+	else
+	{
+		printf("%d not set  ",n);
+	}
+	
+	
+}
