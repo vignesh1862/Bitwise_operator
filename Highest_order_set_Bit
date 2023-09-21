@@ -1,0 +1,31 @@
+// Highest order Set Bit
+
+#include<stdio.h>
+void main()
+{
+	int n,i,bits,num;
+	printf("Enter a Number  ");
+	scanf("%d",&n);
+	bits=1<<((sizeof(int)*8)-1);
+	
+	for(i=0;i<32;i++)
+	{
+		bits=1<<((sizeof(int)*8)-1);
+		
+		num=bits>>i;
+		if(n&num)
+		{
+			printf("%d th bit order  ",31-i);
+			break;
+		}
+		else if(n==0)
+		{
+			printf("0");
+			break;
+		}
+		
+	}
+	
+	
+	
+}
